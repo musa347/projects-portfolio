@@ -175,8 +175,63 @@ const CVUpload = () => {
       transition={{ duration: 0.6 }}
     >
       <div className="cv-upload-header">
-        <h2>CV Management</h2>
-        <p>Upload and manage your CV for recruiters to download</p>
+        <h2>CV & Profile</h2>
+        <p>Download my CV, view career highlights, and manage your own upload</p>
+      </div>
+
+      {/* Quick Profile + Download */}
+      <div className="cv-quick-profile">
+        <div className="profile-left">
+          <h3>Ibrahim Musa</h3>
+          <p>Lagos | +2347086746862</p>
+          <p>
+            <a href="mailto:musaibrahim0028@yahoo.com">musaibrahim0028@yahoo.com</a> |
+            <a href="https://www.linkedin.com/in/musaibrahim" target="_blank" rel="noreferrer"> LinkedIn</a>
+          </p>
+          <p>
+            Musa is a Software Engineer specializing in designing, developing, and maintaining robust, scalable applications. Proficient in REST APIs, SOAP, JDBC, and Spring. Experienced in account switching within enterprise systems, optimizing performance and security.
+          </p>
+        </div>
+        <div className="profile-actions">
+          <motion.a
+            className="cv-action-btn download-btn"
+            href="/cv/ibrahim-musa-cv.pdf"
+            download
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaDownload /> Download CV
+          </motion.a>
+        </div>
+      </div>
+
+      {/* Education & Work Achievements */}
+      <div className="education-achievements">
+        <h3>Education</h3>
+        <ul className="education-list">
+          <li>
+            <strong>MSc, Applied Informatics (Computer Science)</strong> — University of Liverpool (Sep 2019 - Jun 2020)
+          </li>
+          <li>
+            <strong>B.Eng. Software Engineering</strong> — Shenyang University of Chemical Technology (Sep 2014 - Jun 2018)
+          </li>
+        </ul>
+
+        <h3>Selected Work Achievements</h3>
+        <ul className="achievements-list">
+          <li>
+            Designed a scalable metadata processing and streaming solution using Java Spring Boot and Apache Kafka, ingesting from multiple sources and publishing JSON to Kafka for low-latency, high-availability use cases.
+          </li>
+          <li>
+            Implemented robust transaction processing, validation, and approval workflows to improve system efficiency and reliability.
+          </li>
+          <li>
+            Built secure, performant RESTful APIs powering client applications; improved code quality by addressing tech debt and adopting best practices.
+          </li>
+          <li>
+            Collaborated across functions to translate complex business requirements into production-ready software.
+          </li>
+        </ul>
       </div>
 
       {/* Upload Status Messages */}
