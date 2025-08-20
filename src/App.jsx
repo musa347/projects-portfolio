@@ -29,7 +29,9 @@ import {
   FaDollarSign,
   FaBrain,
   FaStar,
-  FaMagic
+  FaMagic,
+  FaBars,
+  FaTimes
 } from 'react-icons/fa';
 
 // IRIS - Ibrahim's Intelligent Response & Insight System
@@ -688,6 +690,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [isVisible, setIsVisible] = useState({});
   const [isTyping, setIsTyping] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Intersection Observer for scroll animations
   useEffect(() => {

@@ -672,6 +672,7 @@
   }
 }
 
+/* Enhanced Mobile Animations */
 @media (max-width: 768px) {
   .typing-effect {
     font-size: 2rem;
@@ -683,5 +684,56 @@
   
   .logo-spin {
     animation-duration: 6s;
+  }
+  
+  /* Reduce animation intensity on mobile */
+  .hover-lift:hover {
+    transform: translateY(-3px);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.03);
+  }
+  
+  .bounce-gentle {
+    animation-duration: 3s;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-effect {
+    font-size: 1.5rem;
+  }
+  
+  /* Further reduce animations on small screens */
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+  
+  .float-gentle {
+    animation-duration: 5s;
+  }
+  
+  .logo-spin {
+    animation-duration: 8s;
+  }
+}
+
+@media (max-width: 360px) {
+  .typing-effect {
+    font-size: 1.2rem;
+  }
+  
+  /* Minimal animations on very small screens */
+  .hover-lift:hover {
+    transform: translateY(-1px);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.01);
   }
 }
