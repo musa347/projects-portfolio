@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FaUpload, 
   FaDownload, 
-  FaTrash, 
   FaFilePdf, 
   FaFileWord, 
   FaFile,
@@ -22,14 +21,37 @@ const CVUpload = () => {
   const [showPreview, setShowPreview] = useState(false);
   const [previewUrl, setPreviewUrl] = useState(null);
 
-  // Load saved CV from localStorage on component mount
+  // Load saved CV from localStorage, otherwise try static CV from public/cv
   useEffect(() => {
-    const savedCV = localStorage.getItem('uploadedCV');
-    const savedDate = localStorage.getItem('cvLastUpdated');
-    if (savedCV) {
-      setUploadedCV(JSON.parse(savedCV));
-      setLastUpdated(savedDate);
-    }
+    const init = async () => {
+      const savedCV = localStorage.getItem('uploadedCV');
+      const savedDate = localStorage.getItem('cvLastUpdated');
+      if (savedCV) {
+        setUploadedCV(JSON.parse(savedCV));
+        setLastUpdated(savedDate);
+        return;
+      }
+
+      // Check for a statically hosted CV placed at public/cv/ibrahim-musa-cv.pdf
+      try {
+        const staticPath = '/cv/ibrahim-musa-cv.pdf';
+        const res = await fetch(staticPath, { method: 'HEAD' });
+        if (res.ok) {
+          setUploadedCV({
+            name: 'Ibrahim-Musa-CV.pdf',
+            size: 0,
+            type: 'application/pdf',
+            data: staticPath,
+            uploadDate: null,
+          });
+          setLastUpdated(null);
+        }
+      } catch (e) {
+        // Ignore if not available
+      }
+    };
+
+    init();
   }, []);
 
   const getFileIcon = (fileType) => {
@@ -132,14 +154,7 @@ const CVUpload = () => {
     }
   };
 
-  const handleDelete = () => {
-    setUploadedCV(null);
-    setLastUpdated(null);
-    localStorage.removeItem('uploadedCV');
-    localStorage.removeItem('cvLastUpdated');
-    setUploadStatus('deleted');
-    setTimeout(() => setUploadStatus(''), 3000);
-  };
+
 
   const handlePreview = async () => {
     if (!uploadedCV) return;
@@ -175,8 +190,8 @@ const CVUpload = () => {
       transition={{ duration: 0.6 }}
     >
       <div className="cv-upload-header">
-        <h2>CV Management</h2>
-        <p>Upload and manage your CV for recruiters to download</p>
+        <h2>Curriculum Vitae</h2>
+        <p>View and download my CV</p>
       </div>
 
       {/* Upload Status Messages */}
@@ -283,36 +298,10 @@ const CVUpload = () => {
               >
                 <FaDownload /> Download
               </motion.button>
-              <motion.button
-                className="cv-action-btn delete-btn"
-                onClick={handleDelete}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <FaTrash /> Remove
-              </motion.button>
             </div>
           </div>
 
-          <div className="cv-update-section">
-            <h4>Update CV</h4>
-            <p>Upload a new version to replace the current CV</p>
-            <motion.button
-              className="update-cv-btn"
-              onClick={() => fileInputRef.current?.click()}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaUpload /> Upload New Version
-            </motion.button>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept=".pdf,.doc,.docx"
-              onChange={handleFileSelect}
-              style={{ display: 'none' }}
-            />
-          </div>
+          {/* Update functionality removed for recruiter-only view/download */}
         </motion.div>
       )}
 
@@ -369,7 +358,7 @@ const CVUpload = () => {
                 <button className="cv-action-btn download-btn" onClick={handleDownload}>
                   <FaDownload /> Download
                 </button>
-                <button className="cv-action-btn delete-btn" onClick={() => setShowPreview(false)}>
+                <button className="cv-action-btn" onClick={() => setShowPreview(false)}>
                   Close
                 </button>
               </div>
