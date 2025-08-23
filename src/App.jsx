@@ -80,7 +80,7 @@ What interests you most?`
   // About iMusa/IRIS
   if (lowerInput.includes('who') && (lowerInput.includes('you') || lowerInput.includes('ibrahim') || lowerInput.includes('musa') || lowerInput.includes('imusa') || lowerInput.includes('iris'))) {
     return [
-      `👨‍💻 **About iMusa**
+      ` **About iMusa**
 
 **Role**: Backend Engineer & AI Systems Builder
 **Specialty**: FinTech systems, fraud detection, and intelligent AI assistants
@@ -92,7 +92,7 @@ What interests you most?`
 
 **Proven Impact**: Multiple live AI systems serving real users! 🚀`,
 
-      `🎯 **iMusa's Professional Identity**
+      ` **iMusa's Professional Identity**
 
 **Primary Expertise:**
 → Backend Engineering (Java Spring Boot, Python FastAPI)
@@ -131,7 +131,7 @@ What interests you most?`
     return [
       `🛠️ **Technical Arsenal**
 
-**🖥️ Programming & Backend Engineering:**
+** Programming & Backend Engineering:**
 • Java (Spring Boot) – backend services, SOAP/REST APIs, microservices
 • Python (FastAPI, ML integration) – fraud detection systems
 • SQL/MySQL – database design, migrations, Dockerized setups
@@ -139,7 +139,7 @@ What interests you most?`
 • Kubernetes – container orchestration knowledge
 • Git & GitHub – repo management, CI/CD workflows
 
-**🤖 AI & Data Science:**
+** AI & Data Science:**
 • Machine Learning (Python, R) – model training, fraud detection
 • AI Chat Systems – multiple deployed assistants
 • Data Science – statistical modeling, analysis
@@ -170,7 +170,7 @@ What interests you most?`
 
 **Philosophy**: End-to-end delivery from idea → code → deployment → live system`,
 
-      `🎯 **Advanced Capabilities**
+      ` **Advanced Capabilities**
 
 **System Design & Architecture:**
 • Scalable backend systems
@@ -199,7 +199,7 @@ What interests you most?`
   // Projects & Portfolio
   if (lowerInput.includes('project') || lowerInput.includes('work') || lowerInput.includes('portfolio')) {
     return [
-      `🚀 **Live Project Showcase**
+      ` **Live Project Showcase**
 
 **AI Systems (Deployed & Running):**
 ┌─ IRIS AI Assistant
@@ -240,7 +240,7 @@ What interests you most?`
 
 **Impact**: Real business value through intelligent automation`,
 
-      `🎯 **Engineering Excellence**
+      ` **Engineering Excellence**
 
 **Delivery Approach:**
 1. **Problem Analysis** - Deep understanding of business needs
@@ -265,7 +265,7 @@ What interests you most?`
   // Contact & Collaboration
   if (lowerInput.includes('contact') || lowerInput.includes('hire') || lowerInput.includes('work together')) {
     return [
-      `📧 **Let's Connect**
+      ` **Let's Connect**
 
 **Ready to collaborate?**
 
@@ -282,7 +282,7 @@ What interests you most?`
 
 **Let's build something amazing together!**`,
 
-      `🤝 **Collaboration Opportunities**
+      ` **Collaboration Opportunities**
 
 **I'm excited to work on:**
 • Full-stack web applications
@@ -300,7 +300,7 @@ What interests you most?`
 **Ready to discuss your next project?**
 *Drop me a line - I love talking tech!*`,
 
-      `💬 **Get In Touch**
+      ` **Get In Touch**
 
 **Available For:**
 • Full-stack development
@@ -340,7 +340,7 @@ What interests you most?`
 
 **Philosophy**: Components should be like LEGO blocks - perfectly crafted and infinitely combinable`,
 
-      `🎨 **Frontend Mastery**
+      ` **Frontend Mastery**
 
 **Development Approach:**
 1. **Design System First** - Consistent, scalable components
@@ -356,7 +356,7 @@ What interests you most?`
 
 *Creating interfaces that users love to interact with*`,
 
-      `✨ **UI/UX Philosophy**
+      ` **UI/UX Philosophy**
 
 **Core Principles:**
 → **Intuitive**: Users shouldn't need instructions
@@ -394,7 +394,7 @@ What interests you most?`
 
 **Philosophy**: Scalable, maintainable systems that solve real business problems`,
 
-      `🏗️ **Production System Architecture**
+      ` **Production System Architecture**
 
 **Backend Technology Stack:**
 ┌─ Java Spring Boot → Enterprise services, microservices, SOAP/REST APIs
@@ -438,7 +438,7 @@ What interests you most?`
   // AI & Technology
   if (lowerInput.includes('ai') || lowerInput.includes('gemini') || lowerInput.includes('chatbot') || lowerInput.includes('iris') || lowerInput.includes('machine learning') || lowerInput.includes('ml')) {
     return [
-      `🤖 **AI Systems Builder**
+      ` **AI Systems Builder**
 
 **Live AI Systems Deployed:**
 • **IRIS AI Assistant** - This intelligent conversation system
@@ -454,7 +454,7 @@ What interests you most?`
 
 **Philosophy**: AI systems that solve real problems for real users`,
 
-      `🧠 **Machine Learning & Data Science**
+      ` **Machine Learning & Data Science**
 
 **ML Engineering Capabilities:**
 ├── Model Training & Deployment (Python, R)
@@ -476,7 +476,7 @@ What interests you most?`
 
 *Building AI systems that create measurable business value*`,
 
-      `🌟 **AI Development Philosophy**
+      ` **AI Development Philosophy**
 
 **Core Approach:**
 • End-to-end AI system delivery
@@ -506,7 +506,7 @@ What interests you most?`
   // FinTech & Fraud Detection
   if (lowerInput.includes('fintech') || lowerInput.includes('fraud') || lowerInput.includes('payment') || lowerInput.includes('financial')) {
     return [
-      `💰 **FinTech & Fraud Detection Expertise**
+      ` **FinTech & Fraud Detection Expertise**
 
 **Fraud Detection System:**
 • **Backend Architecture** - Python FastAPI with ML integration
@@ -528,7 +528,7 @@ What interests you most?`
 
 *Building secure, scalable financial systems that protect real money*`,
 
-      `🔒 **Financial Systems Engineering**
+      ` **Financial Systems Engineering**
 
 **Domain Expertise:**
 → Fraud detection algorithm development
@@ -552,7 +552,7 @@ What interests you most?`
 
 *Protecting financial transactions through intelligent system design*`,
 
-      `📊 **Data Science in Finance**
+      ` **Data Science in Finance**
 
 **Financial ML Applications:**
 • **Fraud Detection Models** - Pattern recognition & anomaly detection
@@ -595,7 +595,7 @@ What interests you most?`
 
 **Philosophy**: Great software, like great coffee, requires patience, skill, and the right blend of ingredients`,
 
-      `🌟 **Caffeine-Driven Development**
+      ` **Caffeine-Driven Development**
 
 **Coffee Preferences:**
 • **Morning**: Strong espresso for focus
@@ -611,7 +611,7 @@ What interests you most?`
 
 *What's your favorite coding fuel?*`,
 
-      `💡 **The Coffee Connection**
+      ` **The Coffee Connection**
 
 **Why Coffee & Code Go Together:**
 1. **Ritual**: Creates focus & routine
@@ -646,7 +646,7 @@ What interests you most?`
 
 *What specific aspect interests you most?*`,
 
-    `🚀 **Creative Mode Active**
+    ` **Creative Mode Active**
 
 **Topic**: "${input}"
 **Response**: Engaging creative intelligence protocols
@@ -664,7 +664,7 @@ Ibrahim's approach to "${input}" would likely involve:
 
 *How can I provide more targeted insights?*`,
 
-    `🚀 **IRIS Insight Engine**
+    ` **IRIS Insight Engine**
 
 **Processing**: "${input}"
 **Mode**: Creative conversation while Gemini API loads
@@ -1000,7 +1000,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🛡️ Fraud Detection System</h3>
+                      <h3>Fraud Detection System</h3>
                       <p>A real-time fraud detection API using Machine Learning to identify suspicious financial transactions. Features FastAPI backend with Spring Boot service integration, ML prediction models, and comprehensive logging system.</p>
                       <div className="tech-stack">
                         <span>Python</span>
@@ -1011,13 +1011,13 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/fraud-detection" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> ML API
+                          ML API
                         </a>
                         <a href="https://github.com/musa347/fraud-detection-backend" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Backend Service
+                          Backend Service
                         </a>
                         <a href="https://fraudportal.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaExternalLinkAlt /> Live Portal
+                          Live Portal
                         </a>
                       </div>
                     </div>
@@ -1031,7 +1031,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>📊 G-Stat Microservices Platform</h3>
+                      <h3>G-Stat Microservices Platform</h3>
                       <p>Scalable, secure backend system simulating national statistical data ingestion and delivery. Built with microservices architecture, API Gateway, Kafka messaging, and comprehensive data processing pipeline.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1042,10 +1042,10 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/G-Stat-Microservices-Platform" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Platform
+                          Platform
                         </a>
                         <a href="https://github.com/musa347/gdp-data-frontend" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Frontend
+                          Frontend
                         </a>
                       </div>
                     </div>
@@ -1059,7 +1059,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🤖 Iris AI Chat Assistance</h3>
+                      <h3>Iris AI Chat Assistance</h3>
                       <p>Sophisticated chat interface with real-time AI responses, integrated with Google's Gemini API. Features Spring Boot backend deployed on Render, message history, typing indicators, and live AI processing.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1070,13 +1070,13 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://iriss.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaExternalLinkAlt /> Live Portal
+                          Live Portal
                         </a>
                         <a href="https://github.com/musa347/IRIS-frontend-" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Frontend Repo
+                          Frontend Repo
                         </a>
                         <a href="https://github.com/musa347/gemini-ai-chatbot" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Backend Repo
+                          Backend Repo
                         </a>
                       </div>
                     </div>
@@ -1090,7 +1090,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🧠 Lexora.ai - Job Application Toolkit</h3>
+                      <h3>Lexora.ai - Job Application Toolkit</h3>
                       <p>AI-powered job application toolkit that generates ATS-optimized résumés, tailored cover letters, and cold outreach emails. Uses advanced AI to match user profiles with job requirements.</p>
                       <div className="tech-stack">
                         <span>AI/ML</span>
@@ -1101,7 +1101,7 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/Lexora.ai" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Source Code
+                          Source Code
                         </a>
                       </div>
                     </div>
@@ -1115,7 +1115,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>📧 AI Email Reply Generator</h3>
+                      <h3>AI Email Reply Generator</h3>
                       <p>Intelligent email reply generation system using Gemini API. Spring Boot backend that analyzes incoming emails and generates contextually appropriate responses with professional tone and accuracy.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1126,7 +1126,7 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/AI-Email-Reply-Generator" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Source Code
+                          Source Code
                         </a>
                       </div>
                     </div>
@@ -1140,7 +1140,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🔬 Smart AI Research Assistant</h3>
+                      <h3>Smart AI Research Assistant</h3>
                       <p>AI-powered research assistant that summarizes multiple texts and documents. Built with Spring Boot and Spring AI, featuring intelligent text analysis, summarization algorithms, and research workflow automation.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1151,7 +1151,7 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/Smart-AI-Research-Assistance" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Source Code
+                          Source Code
                         </a>
                       </div>
                     </div>
@@ -1165,7 +1165,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🏢 Employee Tracking System</h3>
+                      <h3>Employee Tracking System</h3>
                       <p>Comprehensive employee management system built from ground up using Spring Boot 3, Spring MVC, Spring Security 6, and Thymeleaf. Features secure authentication, role-based access, and MySQL database integration.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1176,7 +1176,7 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/Employee-Tracking-System" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Source Code
+                          Source Code
                         </a>
                       </div>
                     </div>
@@ -1190,7 +1190,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🏦 Java Banking Application</h3>
+                      <h3>Java Banking Application</h3>
                       <p>Simple yet robust banking application with core functionalities including account creation, balance inquiries, deposits, and withdrawals. Built with Spring Boot and following banking industry best practices.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1201,7 +1201,7 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/Java-Springboot-Banking-App" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Source Code
+                          Source Code
                         </a>
                       </div>
                     </div>
@@ -1215,7 +1215,7 @@ function App() {
                     whileHover={{ y: -10, scale: 1.02 }}
                   >
                     <div className="project-content">
-                      <h3>🔧 Microservices Job Platform</h3>
+                      <h3>Microservices Job Platform</h3>
                       <p>Scalable job application platform built with microservices architecture. Features Job, Company, and Review services with Eureka Service Registry, Docker containerization, and RabbitMQ message broker integration.</p>
                       <div className="tech-stack">
                         <span>Java</span>
@@ -1226,10 +1226,34 @@ function App() {
                       </div>
                       <div className="project-links">
                         <a href="https://github.com/musa347/Spring-Boot-Job-Application" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Main Platform
+                          Main Platform
                         </a>
                         <a href="https://github.com/musa347/Job-Microservice" target="_blank" rel="noopener noreferrer" className="project-link">
-                          <FaGithub /> Job Service
+                          Job Service
+                        </a>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  <motion.div 
+                    className="project-card hover-lift"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1.2, duration: 0.6 }}
+                    whileHover={{ y: -10, scale: 1.02 }}
+                  >
+                    <div className="project-content">
+                      <h3> PR Review Assistant</h3>
+                      <p>GitHub PR review workflow using Checkstyle and SpotBugs to enforce coding standards and catch issues automatically.</p>
+                      <div className="tech-stack">
+                        <span>GitHub Actions</span>
+                        <span>Checkstyle</span>
+                        <span>SpotBugs</span>
+                        <span>Static Analysis</span>
+                      </div>
+                      <div className="project-links">
+                        <a href="https://github.com/musa347/pr-review-assistant" target="_blank" rel="noopener noreferrer" className="project-link">
+                          Source Code
                         </a>
                       </div>
                     </div>
@@ -1364,7 +1388,7 @@ function App() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                 >
-                  🛡️ Fraud Detection Portal
+                   Fraud Detection Portal
                 </motion.h2>
                 <motion.p
                   className="section-subtitle"
