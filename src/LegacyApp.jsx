@@ -681,7 +681,7 @@ Ibrahim's approach to "${input}" would likely involve:
   ];
 };
 
-function App() {
+function LegacyApp() {
   const [showSplash, setShowSplash] = useState(true);
   const [activeSection, setActiveSection] = useState('home');
   const [messages, setMessages] = useState([]);

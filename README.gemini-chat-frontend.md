@@ -56,10 +56,10 @@ src/
 │   └── SplashScreen.jsx          # Loading splash screen
 ├── services/
 │   └── api.jsx                   # API service layer
-├── App.jsx                       # Main application component
-├── App.css                       # Main stylesheet with CSS variables
+├── LegacyApp.jsx                       # Main application component
+├── LegacyApp.css                       # Main stylesheet with CSS variables
 ├── animations.css                # Animation library
-└── main.jsx                      # Application entry point
+└── main.tsx                      # Application entry point
 ```
 
 ## 🎯 Key Sections
